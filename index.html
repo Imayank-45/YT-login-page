@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Signup Clone</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+    }
+
+    .container {
+        width: 380px;
+        margin: 50px auto;
+        padding: 30px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .logo svg {
+        width: 50px;
+        height: 50px;
+        fill: #FF0000;
+    }
+
+    .logo-text {
+        font-size: 28px;
+        color: #FF0000;
+        font-weight: bold;
+        margin-top: -10px;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        margin-top: 12px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+
+    input:focus {
+        border-color: #FF0000;
+        outline: none;
+    }
+
+    .error {
+        color: red;
+        font-size: 13px;
+        display: none;
+        margin-top: 4px;
+    }
+
+    #strength {
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 20px;
+        padding: 12px;
+        font-size: 16px;
+        background: #FF0000;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+
+    button:enabled {
+        opacity: 1;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- YouTube icon -->
+    <div class="logo">
+        <svg viewBox="0 0 24 24">
+            <path d="M23.5 6.2s-.2-1.7-.9-2.5c-.9-.9-1.9-.9-2.4-1C16.7 2.3 12 2.3 12 2.3h-.1s-4.7 0-8.2.4c-.6.1-1.6.1-2.4 1-.7.8-.9 2.5-.9 2.5S0 8.1 0 10v1.9c0 1.9.2 3.8.2 3.8s.2 1.7.9 2.5c.9.9 2.1.9 2.6 1C7.3 19.7 12 19.7 12 19.7s4.7 0 8.2-.4c.6-.1 1.6-.1 2.4-1 .7-.8.9-2.5.9-2.5s.2-1.9.2-3.8V10c0-1.9-.2-3.8-.2-3.8zM9.6 15V7.9l6.4 3.6-6.4 3.5z"/>
+        </svg>
+        <div class="logo-text">YouTube</div>
+    </div>
+
+    <!-- Username -->
+    <input id="username" placeholder="Username">
+    <p id="uError" class="error"></p>
+
+    <!-- Email -->
+    <input id="email" placeholder="Email">
+    <p id="eError" class="error"></p>
+
+    <!-- Password -->
+    <input id="password" type="password" placeholder="Password">
+    <p id="pError" class="error"></p>
+    <p id="strength"></p>
+
+    <!-- Confirm Password -->
+    <input id="confirm" type="password" placeholder="Confirm Password">
+    <p id="cError" class="error"></p>
+
+    <button id="signupBtn" disabled>Create Account</button>
+</div>
+
+<footer style="
+    background:#f1f1f1;
+    padding:20px;
+    text-align:center;
+    margin-top:40px;
+    font-family:Arial;
+">
+  © 2025 ideawood code clinic. All rights reserved.
+</footer>
+</body>
+</html>
